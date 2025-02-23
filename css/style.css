@@ -1,0 +1,309 @@
+/* style.css */
+/* 基础重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS 变量 */
+:root {
+  /* 浅色主题 */
+  --bg-color: #ffffff;
+  --text-color: #2c3e50;
+  --card-bg: #ffffff;
+  --theme-btn-color: #2c3e50;
+  --nav-bg: rgba(255, 255, 255, 0.95);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --banner-overlay: rgba(0, 0, 0, 0.5);
+
+  /* 品牌色 */
+  --tech-color: #3498db;
+  --study-color: #27ae60;
+  --life-color: #be2bc5;
+  --sports-color: #e92a15;
+}
+
+/* 暗黑主题 */
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --card-bg: #2d2d2d;
+  --theme-btn-color: #ffffff;
+  --nav-bg: rgba(42, 42, 42, 0.95);
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --banner-overlay: rgba(0, 0, 0, 0.7);
+}
+
+/* 基础样式 */
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 暗黑模式切换按钮 */
+.theme-btn {
+  position: fixed;
+  top: 20px;      /* 距离顶部 20px */
+  right: 30px;    /* 距离右侧 30px */
+  /* 原有样式保留 */
+  background: var(--card-bg);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  color: var(--theme-btn-color);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+
+.theme-btn:hover {
+  transform: scale(1.1);
+}
+
+/* 导航栏 */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: var(--nav-bg);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px var(--shadow-color);
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Banner 区域 */
+.banner {
+  background: linear-gradient(var(--banner-overlay), var(--banner-overlay)),
+              url('../assets/banner.jpg') center/cover;
+  color: white;
+  padding: 160px 0 80px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* 博客卡片布局 */
+.blog-grid {
+  padding: 4rem 0;
+}
+
+.blog-grid .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.blog-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px var(--shadow-color);
+}
+
+/* 图标样式 */
+.blog-card .icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.blog-card:hover .icon {
+  transform: rotate(15deg) scale(1.1);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* 分类颜色 */
+.tech .icon { color: var(--tech-color); }
+.study .icon { color: var(--study-color); }
+.life .icon { color: var(--life-color); }
+.sports .icon { color: var(--sports-color); }
+
+.blog-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.blog-card p {
+  color: color-mix(in srgb, var(--text-color) 70%, transparent);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+/* 按钮样式 */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s;
+  align-self: flex-start;
+}
+
+.tech .btn { background: var(--tech-color); color: white; }
+.study .btn { background: var(--study-color); color: white; }
+.life .btn { background: var(--life-color); color: white; }
+.sports .btn { background: var(--sports-color); color: white; }
+
+.btn:hover {
+  opacity: 0.9;
+  gap: 1rem;
+}
+
+/* 页脚 */
+footer {
+  border-top: 1px solid color-mix(in srgb, var(--text-color) 20%, transparent);
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  font-size: 1.2rem;
+  transition: opacity 0.3s;
+}
+
+.social-links a:hover {
+  opacity: 0.7;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  nav .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .blog-grid .container {
+    grid-template-columns: 1fr;
+  }
+
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .theme-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .banner {
+    padding: 120px 0 60px;
+  }
+}
+
+/* 打印样式 */
+@media print {
+  .theme-btn,
+  .social-links {
+    display: none;
+  }
+
+  .blog-card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}
+
+/* 导航右侧容器布局 */
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* 控制按钮与导航链接的间距 */
+}
+
+/* 调整按钮尺寸和位置 */
+.theme-btn {
+  width: 40px;
+  height: 40px;
+  margin-left: 1rem; /* 与导航链接的间距 */
+}

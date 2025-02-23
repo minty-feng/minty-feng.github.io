@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>多维探索 | My Blogs</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome 图标 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <a href="/" class="logo">Multi-Blogs</a>
+      
+      <!-- 导航右侧容器 -->
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#blogs">所有博客</a>
+          <a href="#about">关于我</a>
+        </div>
+        <!-- 暗黑模式切换按钮 -->
+        <button id="theme-toggle" class="theme-btn">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 首页 Banner -->
+  <header class="banner">
+    <div class="container">
+      <h1>探索技术、生活与热爱</h1>
+      <p>记录成长点滴，分享多维视角</p>
+    </div>
+  </header>
+
+  <!-- 博客分类展示 -->
+  <section id="blogs" class="blog-grid">
+    <div class="container">
+      <!-- 技术博客（Hugo 实现） -->
+      <div class="blog-card tech">
+        <img src="assets/icons/tech.svg" alt="技术" class="icon">
+        <h2>技术探索</h2>
+        <p>深入编程、架构与开源工具，基于
+          <a href="your-link" 
+            style="color: #e67e22; font-weight: 700; border-bottom: 2px solid #f1c40f;"
+            target="_blank">
+            Hugo + GitHub Actions</a>
+          构建。</p>
+        <a href="https://minty-feng.github.io/tech-blog" class="btn">进入专栏 →</a>
+      </div>
+
+      <div class="blog-card study">
+        <img src="assets/icons/study.svg" alt="学习" class="icon">
+        <h2>学习笔记</h2>
+        <p>整理算法、论文与课程笔记，使用 
+          <a href="your-link" 
+            style="color: #e67e22; font-weight: 700; border-bottom: 2px solid #f1c40f;"
+            target="_blank">
+            Sphinx + ReadTheDocs</a>
+          主题。
+        </p>
+        <a href="https://minty-feng.github.io/study-notes" class="btn">开始学习 →</a>
+      </div>
+
+       
+
+      <!-- 生活随笔（Hexo 实现） -->
+      <div class="blog-card life">
+        <img src="assets/icons/life.svg" alt="生活" class="icon">
+        <h2>生活随笔</h2>
+        <p>摄影、旅行与日常思考，基于 
+           <a href="your-link" 
+            style="color: #e67e22; font-weight: 700; border-bottom: 2px solid #f1c40f;"
+            target="_blank">
+            Hexo + Butterfly</a>
+          主题。</p>
+
+        <a href="https://minty-feng.github.io/life-diary" class="btn">感受生活 →</a>
+      </div>
+
+      <!-- 运动健康（React + Vite 手动构建） -->
+      <div class="blog-card sports">
+        <img src="assets/icons/sports.svg" alt="运动" class="icon">
+        <h2>运动健康</h2>
+        <p>健身计划与营养指南，基于
+          <a href="your-link"
+          style="color: #e67e22; font-weight: 700; border-bottom: 2px solid #f1c40f;"
+            target="_blank">
+            React + Vite</a>
+           手动构建，无静态生成器依赖。</p>
+        <a href="https://minty-feng.github.io/wlb" class="btn">加入挑战 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer>
+    <div class="container">
+      <p>© 2025 zhao. Powered by GitHub Pages.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 脚本 -->
+  <script src="js/script.js"></script>
+</body>
+</html>
