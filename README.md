@@ -66,25 +66,25 @@ live-server --port=3000
 
 ## 🧭 子项目说明
 
-### 1. 技术探索专栏
+### 1. 技术探索专栏(teach-seek)
 - **技术栈**: Hugo + GitHub Actions
 - **特点**: 自动构建/SEO优化/代码高亮
-- [源码仓库](https://minty-feng.github.io/tech-seek)｜[在线访问](https://minty-feng.github.io/tech-seek)
+- [源码仓库](https://github.com/minty-feng/tech-seek)｜[在线访问](https://minty-feng.github.io/tech-seek)
 
-### 2. 学习笔记专栏
+### 2. 学习笔记专栏(study-notes)
 - **技术栈**: Sphinx + ReadTheDocs
 - **特点**: LaTeX支持/文档版本控制
-- [源码仓库](https://minty-feng.github.io/stude-notes)｜[在线访问](https://minty-feng.github.io/study-notes)
+- [源码仓库](https://github.com/minty-feng/study-notes)｜[在线访问](https://minty-feng.github.io/study-notes)
 
-### 3. 生活随笔专栏
+### 3. 生活随笔专栏(life-diary)
 - **技术栈**: Hexo + Butterfly主题
 - **特点**: 图文混排/社交互动组件
-- [源码仓库](https://minty-feng.github.io/life-diary)｜[在线访问](https://minty-feng.github.io/life-diary)
+- [源码仓库](https://github.com/minty-feng/life-diary)｜[在线访问](https://minty-feng.github.io/life-diary)
 
-### 4. 运动健康专栏
+### 4. 运动健康专栏(wlb)
 - **技术栈**: React + Vite
 - **特点**: SPA应用/动态数据展示
-- [源码仓库](https://minty-feng.github.io/wlb)｜[在线访问](https://minty-feng.github.io/wlb)
+- [源码仓库](https://github.com/minty-feng/wlb)｜[在线访问](https://minty-feng.github.io/wlb)
 
 
 ## 📄 协议许可
