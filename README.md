@@ -29,7 +29,7 @@ https://minty-feng.github.io
 **子项目技术**  
 | 专栏 | 技术栈 | 构建方式 |
 |------|--------|----------|
-| 技术探索 | Hugo + GitHubPages | 静态生成 |
+| 技术探索 | Hugo + GitHub Pages | 静态生成 |
 | 学习笔记 | Sphinx + ReadTheDocs | 文档生成 |
 | 生活随笔 | Hexo + Vercel | 主题定制 |
 | 运动健康 | React + Docusaurus | SPA应用 |
