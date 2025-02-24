@@ -22,6 +22,8 @@
   --study-color: #27ae60;
   --life-color: #be2bc5;
   --sports-color: #e92a15;
+  --ai-color: #44d2e8;    /* 橙色 */
+  --love-color: #e84393;  /* 粉色 */
 }
 
 /* 暗黑主题 */
@@ -174,6 +176,9 @@ nav {
 .study .icon { color: var(--study-color); }
 .life .icon { color: var(--life-color); }
 .sports .icon { color: var(--sports-color); }
+.ai .icon { color: var(--ai-color); }
+.love .icon { color: var(--love-color); }
+
 
 .blog-card h2 {
   font-size: 1.5rem;
@@ -203,6 +208,9 @@ nav {
 .study .btn { background: var(--study-color); color: white; }
 .life .btn { background: var(--life-color); color: white; }
 .sports .btn { background: var(--sports-color); color: white; }
+.ai .btn { background: var(--ai-color); color: white; }
+.love .btn { background: var(--love-color); color: white; }
+
 
 .btn:hover {
   opacity: 0.9;
@@ -306,4 +314,207 @@ nav .container {
   width: 40px;
   height: 40px;
   margin-left: 1rem; /* 与导航链接的间距 */
+}
+
+/* 诗意标题 */
+.poetic-title {
+  font-family: 'Ma Shan Zheng', cursive;
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.poetic-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: var(--love-color);
+  margin: 0.5rem auto;
+}
+
+.poetic-subtitle {
+  display: block;
+  font-size: 0.9em;
+  opacity: 0.9;
+  margin-top: 0.5rem;
+}
+
+/* 诗意正文 */
+.poetic-content {
+  line-height: 1.8;
+  margin: 1.5rem 0;
+}
+
+.poetic-text {
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 3px solid color-mix(in srgb, var(--love-color) 30%, transparent);
+}
+
+.tech-highlight {
+  color: var(--love-color);
+  font-weight: 600;
+  text-shadow: 0 2px 3px rgba(232, 67, 147, 0.2);
+}
+
+/* 密码提示 */
+.secret-phrase {
+  margin: 1rem 0;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+.chinese-quote {
+  display:inline-block;
+  color: #e84393;
+  font-size: 1.1em;
+  margin: 0.5rem 0;
+  text-shadow: 0 2px 3px rgba(232, 67, 147, 0.3);
+}
+
+.password-warning {
+  font-size: 0.85em;
+  color: #e74c3c;
+  margin-top: 1rem;
+}
+
+/* 诗意按钮 */
+.poetic-btn {
+  background: linear-gradient(
+    135deg,
+    var(--love-color) 30%,
+    #c0392b 100%
+  ) !important;
+  font-family: 'Ma Shan Zheng', cursive;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+
+.poetic-btn i {
+  margin: 0 0.5rem;
+  transition: transform 0.3s;
+}
+
+.poetic-btn:hover i:first-child {
+  transform: rotate(-15deg);
+}
+
+.poetic-btn:hover i:last-child {
+  transform: scale(1.2);
+}
+
+/* 暗黑模式适配 */
+[data-theme="dark"] {
+  .poetic-text {
+    border-left-color: color-mix(in srgb, var(--love-color) 50%, transparent);
+  }
+  
+  .secret-phrase {
+    text-shadow: 0 2px 5px rgba(232, 67, 147, 0.5);
+  }
+}
+/* 恋爱日记专属样式 */
+.blog-card.love {
+  position: relative; /* 为模态框创建定位上下文 */
+}
+
+/* 恋爱模态框样式 */
+.love-modal {
+  display: none;
+  position: absolute; /* 改为绝对定位 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 40px); /* 保留边距 */
+  max-width: 400px;
+  z-index: 100;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  padding: 20px;
+}
+
+.love-modal-content {
+  position: relative;
+}
+
+.modal-title {
+  color: var(--love-color);
+  font-family: 'Ma Shan Zheng', cursive;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.date-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--love-color);
+  border-radius: 8px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.modal-confirm {
+  background: var(--love-color) !important;
+  color: white !important;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.modal-close {
+  background: color-mix(in srgb, var(--text-color) 20%, transparent) !important;
+  color: var(--text-color) !important;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+/* 暗黑模式适配 */
+[data-theme="dark"] .love-modal {
+  background: var(--card-bg);
+  border: 1px solid color-mix(in srgb, var(--love-color) 30%, transparent);
+}
+
+[data-theme="dark"] .date-input {
+  background: color-mix(in srgb, var(--bg-color) 90%, black);
+}
+
+/* 抖动动画 */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-8px); }
+  40%, 80% { transform: translateX(8px); }
+}
+
+.error-hint {
+  color: #e74c3c;
+  text-align: center;
+  margin-top: 1rem;
+  display: none;
+  position: relative;
+}
+
+/* 新增跳动动画 */
+@keyframes jump {
+  0%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-5px); }
+  60% { transform: translateY(3px); }
+}
+
+.error-hint.shake {
+  animation: jump 0.6s ease-in-out;
 }

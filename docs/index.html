@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>多维探索 | My Blogs</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+
   <!-- Font Awesome 图标 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,7 +15,6 @@
   <nav>
     <div class="container">
       <a href="/" class="logo">Multi-Blogs</a>
-      
       <!-- 导航右侧容器 -->
       <div class="nav-right">
         <div class="nav-links">
@@ -44,7 +45,7 @@
         <img src="assets/icons/tech.svg" alt="技术" class="icon">
         <h2>技术探索</h2>
         <p>深入编程、架构与开源工具，基于
-          <a href="your-link" 
+          <a href="#"
             style="color: #e67e22; font-weight: 700; border-bottom: 2px solid #f1c40f;"
             target="_blank">
             Hugo + GitHub Pages</a>
@@ -55,8 +56,8 @@
       <div class="blog-card study">
         <img src="assets/icons/study.svg" alt="学习" class="icon">
         <h2>学习笔记</h2>
-        <p>整理算法、论文与课程笔记，使用 
-          <a href="your-link" 
+        <p>整理算法、论文与课程笔记，使用
+          <a href="#"
             style="color: #e67e22; font-weight: 700; border-bottom: 2px solid #f1c40f;"
             target="_blank">
             Sphinx + ReadTheDocs</a>
@@ -65,14 +66,13 @@
         <a href="https://minty-feng.github.io/study-notes" class="btn">开始学习 →</a>
       </div>
 
-       
 
       <!-- 生活随笔（Hexo 实现） -->
       <div class="blog-card life">
         <img src="assets/icons/life.svg" alt="生活" class="icon">
         <h2>生活随笔</h2>
         <p>摄影、旅行与日常思考，基于 
-           <a href="your-link" 
+           <a href="#" 
             style="color: #e67e22; font-weight: 700; border-bottom: 2px solid #f1c40f;"
             target="_blank">
             Hexo + Vercel</a>
@@ -86,12 +86,83 @@
         <img src="assets/icons/sports.svg" alt="运动" class="icon">
         <h2>运动健康</h2>
         <p>健身计划与营养指南，基于
-          <a href="your-link"
+          <a href="#"
           style="color: #e67e22; font-weight: 700; border-bottom: 2px solid #f1c40f;"
             target="_blank">
             React + Docusaurus</a>
            手动构建部署，无静态生成器依赖。</p>
         <a href="https://minty-feng.github.io/wlb" class="btn">加入挑战 →</a>
+      </div>
+
+
+      <!-- AI变现 -->
+      <div class="blog-card ai">
+        <img src="assets/icons/ai.svg" alt="AI" class="icon">
+        <h2>AI变现实践</h2>
+        <p>探索Prompt工程与模型微调，基于
+          <a href="#" 
+            style="color: #e67e22; font-weight: 700; border-bottom: 2px solid #f1c40f;"
+            target="_blank">
+            Hugging Face + FastAPI</a>
+          构建AI服务，实现技术变现。</p>
+        <a href="https://minty-feng.github.io/ai-projects" class="btn">开启变现 →</a>
+      </div>
+
+      <!-- 恋爱日记 -->
+      <div class="blog-card love">
+        <img src="assets/icons/love.svg" alt="恋爱" class="icon">
+        
+        <!-- 标题部分 -->
+        <h2 class="poetic-title">
+          与呦呦二三事
+          <small class="poetic-subtitle">红尘三千不及你眉间</small>
+        </h2>
+      
+        <!-- 诗意描述 -->
+        <div class="poetic-content">
+          
+          <p class="poetic-text">      
+            <a href="#" 
+          style="color: #e67e22; font-weight: 700; border-bottom: 2px solid #f1c40f;"
+          target="_blank">
+          以<span class="tech-highlight">Vue3</span>为笔，<span class="tech-highlight">Notion</span>作笺</a>
+            折浮世清欢为不系之舟，廊外风雨琳琅，檐下自成结界。
+          </p>
+      
+          <!-- 密码提示 -->
+          <div class="poetic-password-hint">
+            
+            <div class="secret-phrase">
+              <span>暗号x：</span> 
+              <span class="chinese-quote">『1128』</span>
+            </div>
+            <p class="password-warning">
+              <i class="fas fa-paw"></i>
+              密码错误者将坠入单身狗次元裂缝🐶
+            </p>
+          </div>
+        </div>
+      
+        <!-- 访问按钮 -->
+        
+        <button class="btn love-btn poetic-btn" onclick="showDatePicker()">
+          <i class="fas fa-key"></i>
+          解锁结界
+          <i class="fas fa-heart"></i>
+        </button>
+        
+        <!-- 日期验证模态框 -->
+        <div id="dateModal" class="love-modal">
+          <div class="love-modal-content">
+            <h3 class="modal-title">请输入特别的日子</h3>
+            <input type="date" id="specialDate" class="date-input">
+            <div class="modal-actions">
+              <button onclick="validateDate()" class="modal-confirm">验证</button>
+              <button onclick="closeModal()" class="modal-close">关闭</button>
+            </div>
+            <p id="errorText" class="error-hint">❌ 这不是我们相遇的那一天</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>

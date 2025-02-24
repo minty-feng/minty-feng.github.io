@@ -33,6 +33,9 @@ https://minty-feng.github.io
 | 学习笔记 | Sphinx + ReadTheDocs | 文档生成 |
 | 生活随笔 | Hexo + Vercel | 静态生成 |
 | 运动健康 | React + Docusaurus | SPA应用 |
+| AI | React + Docusaurus | SPA应用 |
+| 与呦呦 | Vue3 + Docusaurus | SPA应用 |
+
 
 ## 🚀 快速开始
 
