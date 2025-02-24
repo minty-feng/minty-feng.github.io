@@ -31,7 +31,7 @@ https://minty-feng.github.io
 |------|--------|----------|
 | 技术探索 | Hugo + GitHub Pages | 静态生成 |
 | 学习笔记 | Sphinx + ReadTheDocs | 文档生成 |
-| 生活随笔 | Hexo + Vercel | 主题定制 |
+| 生活随笔 | Hexo + Vercel | 静态生成 |
 | 运动健康 | React + Docusaurus | SPA应用 |
 
 ## 🚀 快速开始
@@ -67,7 +67,7 @@ live-server --port=3000
 ## 🧭 子项目说明
 
 ### 1. 技术探索专栏(teach-seek)
-- **技术栈**: Hugo + GitHub Actions
+- **技术栈**: Hugo + GitHub Pages
 - **特点**: 自动构建/SEO优化/代码高亮
 - [源码仓库](https://github.com/minty-feng/tech-seek)｜[在线访问](https://minty-feng.github.io/tech-seek)
 
@@ -77,12 +77,12 @@ live-server --port=3000
 - [源码仓库](https://github.com/minty-feng/study-notes)｜[在线访问](https://minty-feng.github.io/study-notes)
 
 ### 3. 生活随笔专栏(life-diary)
-- **技术栈**: Hexo + Butterfly主题
+- **技术栈**: Hexo + Vercel
 - **特点**: 图文混排/社交互动组件
 - [源码仓库](https://github.com/minty-feng/life-diary)｜[在线访问](https://minty-feng.github.io/life-diary)
 
 ### 4. 运动健康专栏(wlb)
-- **技术栈**: React + Vite
+- **技术栈**: React + Docusaurus
 - **特点**: SPA应用/动态数据展示
 - [源码仓库](https://github.com/minty-feng/wlb)｜[在线访问](https://minty-feng.github.io/wlb)
 
