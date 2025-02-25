@@ -33,8 +33,8 @@ https://minty-feng.github.io
 | 学习笔记 | Sphinx + ReadTheDocs | 文档生成 |
 | 生活随笔 | Hexo + Vercel | 静态生成 |
 | 运动健康 | React + Docusaurus | SPA应用 |
-| AI | React + Docusaurus | SPA应用 |
-| 与呦呦 | Vue3 + Docusaurus | SPA应用 |
+| AI实战  | Hugging Face + FastAPI| 模型API服务 |
+| 与呦呦 | Vue3 + Docusaurus | 静态生成 |
 
 
 ## 🚀 快速开始
@@ -69,26 +69,35 @@ live-server --port=3000
 
 ## 🧭 子项目说明
 
-### 1. 技术探索专栏(teach-seek)
+### 1. 技术探索专栏 | teach-seek
 - **技术栈**: Hugo + GitHub Pages
 - **特点**: 自动构建/SEO优化/代码高亮
 - [源码仓库](https://github.com/minty-feng/tech-seek)｜[在线访问](https://minty-feng.github.io/tech-seek)
 
-### 2. 学习笔记专栏(study-notes)
+### 2. 学习笔记专栏 | study-notes
 - **技术栈**: Sphinx + ReadTheDocs
 - **特点**: LaTeX支持/文档版本控制
 - [源码仓库](https://github.com/minty-feng/study-notes)｜[在线访问](https://minty-feng.github.io/study-notes)
 
-### 3. 生活随笔专栏(life-diary)
+### 3. 生活随笔专栏 | life-diary
 - **技术栈**: Hexo + Vercel
 - **特点**: 图文混排/社交互动组件
-- [源码仓库](https://github.com/minty-feng/life-diary)｜[在线访问](https://minty-feng.github.io/life-diary)
+- [源码仓库](https://github.com/minty-feng/life-diary)｜[在线访问](https://life-diary-minty.vercel.app/)
 
-### 4. 运动健康专栏(wlb)
+### 4. 运动健康专栏 | wlb
 - **技术栈**: React + Docusaurus
 - **特点**: SPA应用/动态数据展示
 - [源码仓库](https://github.com/minty-feng/wlb)｜[在线访问](https://minty-feng.github.io/wlb)
 
+### 5. AI实战 | ai
+- **技术栈**: Hugging Face + FastAPI
+- **特点**: 模型API服务/推理展示
+- [源码仓库](https://github.com/minty-feng/wlb)｜[在线访问](https://minty-feng.github.io/wlb)
+
+### 6. 与呦呦二三事｜record
+- **技术栈**: React + Docusaurus
+- **特点**: 图文混排/心动组件
+- [源码仓库](https://github.com/minty-feng/wlb)｜[在线访问](https://minty-feng.github.io/wlb)
 
 ## 📄 协议许可
 [MIT License](LICENSE) © 2025 zhao
